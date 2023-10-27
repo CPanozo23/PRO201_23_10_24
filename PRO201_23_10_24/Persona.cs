@@ -14,7 +14,9 @@ namespace PRO201_23_10_24
         private String documento;
         private String tipo;
         //métodos (get, set y otros)
-
+        //EJEMPLO:
+        //SI NO ME INTERESA LLAMAR POR SEPARADO A NOMBRES Y APELLIDOS,NO NECESITO LOS GET
+        //PODRÍA CREAR UNA FUNCIÓN APARTE LLAMADA NOMBRE_COMPLETO
         public String Apellidos
         {
             get { return apellidos; }
@@ -27,6 +29,7 @@ namespace PRO201_23_10_24
             set { nombres = value; }
         }
 
+        //public String NombreCompleto
         public String Documento
         {
             get { return documento; }
@@ -39,5 +42,9 @@ namespace PRO201_23_10_24
             set { tipo = value; }
         }
 
+        public void IniciarSesion()
+        {
+            Console.WriteLine("Iniciando sesión por " + Nombres + " " + Apellidos);
+        }
     }
 }
